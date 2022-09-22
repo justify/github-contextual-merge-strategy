@@ -4,14 +4,8 @@
   "version": "2.0.1",
   "description": "Defines a contextual merge strategy on GitHub pull requests according to the source branch.",
   "background": {
-    "scripts": [
-      "background.js"
-    ],
+    "scripts": ["background.js"],
     "persistent": false
   },
-  "permissions": [
-    "webNavigation",
-    "tabs",
-    "https://github.com/hookdeck/*"
-  ]
+  "permissions": ["webNavigation", "tabs", "https://github.com/justify/*"]
 }

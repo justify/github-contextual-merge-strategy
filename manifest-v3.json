@@ -6,16 +6,11 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": [
-    "webNavigation",
-    "scripting"
-  ],
-  "host_permissions": [
-    "https://github.com/hookdeck/*"
-  ],
+  "permissions": ["webNavigation", "scripting"],
+  "host_permissions": ["https://github.com/justify/*"],
   "browser_specific_settings": {
     "gecko": {
-      "id": "github-contextual-merge-strategy@hookdeck.com"
+      "id": "github-contextual-merge-strategy@justify.no"
     }
   }
 }

@@ -1,8 +1,8 @@
 # GitHub Contextual Merge Strategy
 
-[slack-badge]: https://img.shields.io/badge/Slack-Hookdeck%20Developers-blue?logo=slack
+[slack-badge]: https://img.shields.io/badge/Slack-justify%20Developers-blue?logo=slack
 
-[![slack-badge]](https://join.slack.com/t/hookdeckdevelopers/shared_invite/zt-yw7hlyzp-EQuO3QvdiBlH9Tz2KZg5MQ)
+[![slack-badge]](https://join.slack.com/t/justifydevelopers/shared_invite/zt-yw7hlyzp-EQuO3QvdiBlH9Tz2KZg5MQ)
 
 > Defines a contextual merge strategy on GitHub pull requests according to the source branch.
 
@@ -26,7 +26,7 @@ See the full story and implementation details
 
 ### Organization
 
-By default the extension runs only on GitHub repos in the [Hookdeck organization](https://github.com/hookdeck)!
+By default the extension runs only on GitHub repos in the [justify organization](https://github.com/justify)!
 
 This is probably not what you want, so you should configure the
 `permissions` in [`manifest.json`](manifest.json) accordingly, as well
@@ -35,7 +35,7 @@ as the URL host and prefix in [`background.js`](background.js).
 This can be done with this simple script:
 
 ```sh
-sed -i.old 's/hookdeck/your-github-org/g' manifest.json background.js
+sed -i.old 's/justify/your-github-org/g' manifest.json background.js
 rm manifest.json.old background.js.old
 ```
 
@@ -50,20 +50,20 @@ that, edit [`script.js`](script.js)!
 Clone this repository:
 
 ```sh
-git clone https://github.com/hookdeck/github-contextual-merge-strategy
+git clone https://github.com/justify/github-contextual-merge-strategy
 ```
 
 ### Chrome
 
-In the Chrome extensions page `chrome://extensions`, enable *developer
-mode* to get the option to *load unpacked* extensions, and point it to
+In the Chrome extensions page `chrome://extensions`, enable _developer
+mode_ to get the option to _load unpacked_ extensions, and point it to
 this directory.
 
 ### Firefox
 
 In Firefox, the extension needs to be packaged as XPI and signed before
 being installed permanently. It can be loaded from
-`about:debugging#/runtime/this-firefox` *load temporary add-on* but it
+`about:debugging#/runtime/this-firefox` _load temporary add-on_ but it
 won't persist across restarts.
 
 To package and sign the extension, you need to setup the
