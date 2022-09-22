@@ -1,15 +1,17 @@
 /* global MutationObserver */
 
 function updateStrategy() {
-  if (document.querySelector(".head-ref").textContent === "main") {
+  const base = document.querySelector(".base-ref").textContent;
+
+  if (base === "main") {
     // If merging from staging or preview (likely to master), do a merge commit
-    console.log("Clicking merge");
+    console.log("Select merge");
     document
       .querySelector(".merge-message details button[value=merge]")
       .click();
   } else {
     // Otherwise squash by default
-    console.log("Clicking squash");
+    console.log("Select squash");
     document
       .querySelector(".merge-message details button[value=squash]")
       .click();
